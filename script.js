@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const featureCards = document.querySelectorAll(".feature-card");
-  const listItems = document.querySelectorAll("ul li");
+  const listItems = document.querySelectorAll(".how-list li");
 
   const revealOnScroll = (elements) => {
     const triggerBottom = window.innerHeight * 0.85;

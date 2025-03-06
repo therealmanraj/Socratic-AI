@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Arial", sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Full Screen Sections */
@@ -13,67 +13,65 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 2rem;
-  position: relative;
+  text-align: center;
 }
 
 /* Typography */
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 2.5rem;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
-/* Hero Section */
-#hero {
-  background: linear-gradient(135deg, #1e2a38, #263b50);
-  color: #e5e7eb;
+p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
 }
 
-#hero h1,
-#hero p {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: fadeIn 1s ease-out forwards;
+/* Subtle subtitle text */
+.subtle-text {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  margin-bottom: 2rem;
 }
 
-#hero p {
-  animation-delay: 0.3s;
-}
-
+/* Buttons */
 .btn {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 12px 24px;
-  background: #6ec3f4;
-  color: #1e2a38;
-  font-weight: bold;
+  padding: 12px 30px;
+  background: #007aff;
+  color: white;
   border-radius: 30px;
+  font-weight: 500;
   text-decoration: none;
-  opacity: 0;
-  animation: fadeIn 1s ease-out 0.6s forwards;
   transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
 .btn:hover {
-  background: #4daedb;
+  background: #005bb5;
 }
 
-/* Dark Section (Like About & How It Works) */
-.dark {
-  background: #1e2a38;
-  color: #e5e7eb;
+/* Light Sections */
+.light-section {
+  background: #f9f9f9;
+  color: #111;
 }
 
-/* Light Sections (Like Features & Contact) */
-#features,
-#contact {
-  background: #f0f4f8;
-  color: #1e2a38;
+/* Dark Sections */
+.dark-section {
+  background: #111;
+  color: #f0f0f0;
 }
 
 /* Features Grid */
@@ -87,13 +85,13 @@ h2 {
 
 .feature-card {
   padding: 20px;
-  background: white;
-  color: #1e2a38;
-  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 500;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transform: translateY(50px);
   opacity: 0;
+  transform: translateY(50px);
   transition: all 0.6s ease-out;
 }
 
@@ -102,33 +100,33 @@ h2 {
   transform: translateY(0);
 }
 
-/* How It Works */
-ul {
+/* How It Works List */
+.how-list {
   list-style: none;
   padding: 0;
 }
 
-ul li {
-  margin: 10px 0;
+.how-list li {
   font-size: 1.2rem;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.5s ease-out;
+  margin: 10px 0;
 }
 
-ul li.visible {
+.how-list li.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Contact */
-#contact p a {
-  color: #0078d4;
+/* Contact Link */
+#contact a {
+  color: #6ec3f4;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-#contact p a:hover {
+#contact a:hover {
   text-decoration: underline;
 }
 
@@ -136,8 +134,9 @@ ul li.visible {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #1e2a38;
-  color: #e5e7eb;
+  font-size: 0.9rem;
+  background: #000;
+  color: #777;
 }
 
 /* Animations */
@@ -149,11 +148,9 @@ footer {
 }
 
 /* RESPONSIVENESS */
-
-/* Tablets */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   h2 {
@@ -165,45 +162,24 @@ footer {
   }
 
   .features-grid {
-    grid-template-columns: 1fr; /* Stack features vertically */
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
   }
 
   .btn {
     padding: 10px 20px;
-  }
-
-  ul li {
-    font-size: 1rem;
-  }
-}
-
-/* Mobile Phones */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  .full-section {
-    padding: 1rem;
-  }
-
-  .btn {
-    padding: 8px 16px;
-  }
-
-  ul li {
-    font-size: 0.9rem;
-  }
-
-  footer {
-    font-size: 0.8rem;
   }
 }
