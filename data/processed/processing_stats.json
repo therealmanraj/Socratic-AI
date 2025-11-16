@@ -2,6 +2,8 @@
   "total_pdfs": 3,
   "total_pages": 3994,
   "total_chunks": 10705,
+  "total_images": 2140,
   "chunks_with_warnings": 259,
-  "chunks_with_procedures": 557
+  "chunks_with_procedures": 557,
+  "chunks_with_diagrams": 315
 }

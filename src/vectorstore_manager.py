@@ -73,7 +73,7 @@ class VectorStoreManager:
 # Usage example
 if __name__ == "__main__":
     # Load processed chunks
-    with open("data/processed/processed_chunks.json", 'r') as f:
+    with open("data/processed/processed_chunks_with_images.json", 'r') as f:
         chunks = json.load(f)
     
     # Create vector store
