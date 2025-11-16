@@ -1,7 +1,7 @@
 {
-  "total_pdfs": 1,
-  "total_pages": 756,
-  "total_chunks": 2040,
-  "chunks_with_warnings": 16,
-  "chunks_with_procedures": 195
+  "total_pdfs": 3,
+  "total_pages": 3994,
+  "total_chunks": 10705,
+  "chunks_with_warnings": 259,
+  "chunks_with_procedures": 557
 }
